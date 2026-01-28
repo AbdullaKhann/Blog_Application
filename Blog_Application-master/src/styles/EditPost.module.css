@@ -1,0 +1,187 @@
+/* ========================================
+   PAGE LAYOUT
+   ======================================== */
+.page {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    font-family: 'Inter', sans-serif;
+    color: #1a202c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 24px;
+}
+
+.editorContainer {
+    width: 100%;
+    max-width: 800px;
+    background: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(20px);
+    border-radius: 24px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    animation: slideUp 0.6s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ========================================
+   HEADER SECTION
+   ======================================== */
+.header {
+    border-bottom: 2px solid rgba(0, 0, 0, 0.04);
+    padding-bottom: 20px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.pageTitle {
+    font-size: 32px;
+    font-weight: 800;
+    background: linear-gradient(135deg, #111 0%, #444 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin: 0;
+    font-family: 'Merriweather', serif;
+}
+
+/* ========================================
+   FORM ELEMENTS
+   ======================================== */
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.inputGroup {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.label {
+    font-size: 14px;
+    font-weight: 600;
+    color: #718096;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-left: 4px;
+}
+
+.input {
+    width: 100%;
+    font-size: 24px;
+    font-weight: 700;
+    padding: 16px;
+    border: 2px solid transparent;
+    border-radius: 16px;
+    background: #f8fafc;
+    color: #2d3748;
+    transition: all 0.3s ease;
+    outline: none;
+}
+
+.input:focus {
+    background: white;
+    border-color: #e2e8f0;
+    box-shadow: 0 0 0 4px rgba(66, 153, 225, 0.1);
+}
+
+.textarea {
+    width: 100%;
+    min-height: 300px;
+    padding: 20px;
+    font-size: 16px;
+    line-height: 1.8;
+    border: 2px solid transparent;
+    border-radius: 16px;
+    background: #f8fafc;
+    color: #2d3748;
+    resize: vertical;
+    transition: all 0.3s ease;
+    outline: none;
+    font-family: 'Inter', sans-serif;
+}
+
+.textarea:focus {
+    background: white;
+    border-color: #e2e8f0;
+    box-shadow: 0 0 0 4px rgba(66, 153, 225, 0.1);
+}
+
+.tagsInput {
+    font-size: 16px;
+    font-weight: 500;
+    color: #4a5568;
+}
+
+/* ========================================
+   BUTTONS
+   ======================================== */
+.actionButtons {
+    display: flex;
+    gap: 16px;
+    margin-top: 10px;
+}
+
+.updateBtn {
+    flex: 2;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border: none;
+    padding: 16px;
+    border-radius: 14px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(102, 126, 234, 0.25);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.updateBtn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(102, 126, 234, 0.35);
+}
+
+.updateBtn:active {
+    transform: translateY(0);
+}
+
+.cancelBtn {
+    flex: 1;
+    background: transparent;
+    border: 2px solid #e2e8f0;
+    color: #718096;
+    padding: 16px;
+    border-radius: 14px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.cancelBtn:hover {
+    background: #f7fafc;
+    border-color: #cbd5e0;
+    color: #4a5568;
+}

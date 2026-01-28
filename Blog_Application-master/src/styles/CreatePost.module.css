@@ -1,0 +1,99 @@
+.page {
+  background: #f5f5f5;
+  min-height: 100vh;
+  padding: 30px;
+}
+
+.editorCard {
+  max-width: 900px;
+  margin: auto;
+  background: white;
+  border-radius: 8px;
+  padding: 20px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.mode span {
+  margin-left: 12px;
+  cursor: pointer;
+  color: gray;
+}
+
+.active {
+  font-weight: 600;
+  color: black;
+}
+
+.title {
+  width: 100%;
+  font-size: 40px;
+  font-weight: 700;
+  border: none;
+  outline: none;
+  margin-top: 20px;
+}
+
+.tags {
+  width: 100%;
+  border: none;
+  outline: none;
+  margin: 10px 0 20px;
+  color: gray;
+}
+
+.toolbar {
+  display: flex;
+  gap: 8px;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 10px;
+}
+
+.toolbar button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.more {
+  margin-left: auto;
+}
+
+.editor {
+  width: 100%;
+  min-height: 300px;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  padding: 15px 0;
+  resize: vertical;
+}
+
+.footer {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.publish {
+  background: #3b49df;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.draft,
+.revert {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: gray;
+}
